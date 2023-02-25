@@ -1,4 +1,3 @@
-//map
 let map;
 
 function initMap() {
@@ -134,4 +133,3 @@ function initMap() {
 }
 
 window.initMap = initMap;
-//map
