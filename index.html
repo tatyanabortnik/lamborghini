@@ -69,11 +69,37 @@
                      >
                   </li>
                </ul>
-               <button id="menu-btn" class="menu-btn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+               <button id="menuBtn" class="menu-btn display-none">
+                  <svg
+                     width="48"
+                     height="48"
+                     viewBox="0 0 48 48"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path d="M0 8H48V13H0V8Z" fill="#000" />
+                     <path d="M0 21H48V26H0V21Z" fill="#000" />
+                     <path d="M48 34H0V39H48V34Z" fill="#000" />
+                  </svg>
                </button>
+
+               <button class="menu-btn-close display-none" id="menuBtnClose">
+                  <svg
+                     width="48"
+                     height="48"
+                     viewBox="0 0 48 48"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23.9996 19.9646L8.79676 4.76172L5.26123 8.29725L20.4641 23.5001L5.26136 38.7029L8.7969 42.2384L23.9996 27.0357L39.2024 42.2384L42.7379 38.7028L27.5352 23.5001L42.738 8.29726L39.2025 4.76173L23.9996 19.9646Z"
+                        fill="#000"
+                     />
+                  </svg>
+               </button>
+
                <ul id="menu-mobile" class="menu-mobile">
                   <li class="menu-item">
                      <a href="#" class="menu-link" data-navigation-id="info"
