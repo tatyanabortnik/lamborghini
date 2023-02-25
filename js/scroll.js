@@ -5,20 +5,16 @@ const handleNavigationScroll = (e) => {
    const dataNavigationId = target.dataset.navigationId;
    const body = document.querySelector("body");
    const header = document.querySelector("#header");
+   const toElement = document.querySelector(`#${dataNavigationId}`);
 
    if (!dataNavigationId) return;
 
    e.preventDefault();
-   const toElement = document.querySelector(`#${dataNavigationId}`);
-   console.log(toElement);
-   console.log(toElement.offsetTop - header.offsetHeight);
-
-   console.log(toElement.id === "evo-video");
    if (toElement.id === "evo-video") {
       toElement.scrollIntoView({ behavior: "smooth", block: "center" });
    } else {
       window.scroll({
-         top: toElement.offsetTop - header.offsetHeight,
+         top: toElement.offsetTop - header.offsetHeight + 2,
          behavior: "smooth",
       });
    }
